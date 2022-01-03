@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EJEMPLO DOM CON JAVASCRIPT</title>
+</head>
+<body>
+    <h1 id='cabecero'>EJEMPLO DOM CON JAVASCRIPT</h1>
+    <P id= 'parrafo'>SALUDOS!</P>
+    <p id='parrafo1'>OTRO PARRAFO</p>
+    <p id='parrafo3'>este es otro parrafo</p>
+    
+    <script>
+        //``
+        let parrafos =document.getElementsByTagName('p');
+        console.log(`No. de parrafos: ${parrafos.length}`);
+        for(let i=0; i<parrafos.length;i++){
+            console.log(`i:${i} - ${parrafos[i].innerHTML}`);
+        }
+
+    </script>
+    
+</body>
+</html>
